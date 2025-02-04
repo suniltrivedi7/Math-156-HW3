@@ -8,9 +8,9 @@ This project implements **binary logistic regression** using **mini-batch stocha
 ### Sigmoid Function
 The logistic regression model maps inputs to probabilities using the sigmoid function:
 
-\
-$y = \sigma(w^T x) = \frac{1}{1 + e^{-w^T x}}$
-\
+$$
+y = \sigma(w^T x) = \frac{1}{1 + e^{-w^T x}}
+$$
 
 Where:
 - \( w \) is the weight vector.
@@ -20,9 +20,9 @@ Where:
 ### Cross-Entropy Loss Function
 To train the model, we minimize the cross-entropy loss:
 
-\[
+$$
 E(w) = - \sum_{n=1}^{N} \left[ t_n \log(y_n) + (1 - t_n) \log(1 - y_n) \right]
-\]
+$$
 
 Where:
 - \( t_n \) is the true label (0 or 1) for sample \( n \).
@@ -31,9 +31,9 @@ Where:
 ### Mini-Batch SGD Optimization
 The model updates weights using **mini-batch stochastic gradient descent**, computing gradients for small subsets (batches) of data instead of the entire dataset. The gradient of the loss function is given by:
 
-\[
+$$
 \nabla E(w) = \frac{1}{B} X^T (y - t)
-\]
+$$
 
 Where:
 - \( B \) is the batch size.
@@ -43,9 +43,9 @@ Where:
 
 Each iteration, the weights are updated using:
 
-\[
+$$
 w \leftarrow w - \eta \nabla E(w)
-\]
+$$
 
 Where \( \eta \) is the learning rate.
 
