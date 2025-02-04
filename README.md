@@ -41,3 +41,8 @@ The script prints the optimized weight vector after training.
 
 This project is open-source and available for modification.
 
+## Documentation
+
+For a detailed explanation of the implementation, check out the [write-up](Math-156-HW3-P3-Writeup.md).
+
+
