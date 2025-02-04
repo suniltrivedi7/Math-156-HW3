@@ -39,8 +39,8 @@ def mini_batch_sgd(X, t, batch_size=32, learning_rate=0.01, max_iter=100):
     Returns:
     w : ndarray (D, 1) - Optimized weight vector
     """
-    N, d = X.shape # Number of samples and features
-    w = np.random.randn(d) * 0.01 # Initialize weights with small random values
+    N, D = X.shape # Number of samples and features
+    w = np.random.randn(D) * 0.01 # Initialize weights with small random values
     
     for iteration in range(max_iter):
         indices = np.random.permutation(N) # Shuffle data
