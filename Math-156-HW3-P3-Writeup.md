@@ -7,11 +7,11 @@ This project implements **binary logistic regression** using **mini-batch stocha
 
 ### Sigmoid Function
 The logistic regression model maps inputs to probabilities using the sigmoid function:
-$
+
 \[
-y = \sigma(w^T x) = \frac{1}{1 + e^{-w^T x}}
+$y = \sigma(w^T x) = \frac{1}{1 + e^{-w^T x}}$
 \]
-$
+
 Where:
 - \( w \) is the weight vector.
 - \( x \) is the input feature vector.
