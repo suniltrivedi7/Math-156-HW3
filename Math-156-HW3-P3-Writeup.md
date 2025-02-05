@@ -63,8 +63,3 @@ Where \( \eta \) is the learning rate.
 
 ## Summary
 This implementation efficiently trains a logistic regression model using mini-batch SGD. The use of **cross-entropy loss** ensures proper optimization, and **batch updates** improve efficiency over standard gradient descent.
-
-### Future Improvements
-- Implement adaptive learning rate methods like **Adam**.
-- Add support for **L2 regularization**.
-- Extend to multi-class classification using **softmax regression**.
